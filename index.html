@@ -1,29 +1,186 @@
 
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="BRAND Pest Control and Cleaning Services - safe, effective and reliable pest control and professional cleaning solutions.">
+  <meta name="description" content="BRAND Pest Control and Cleaning Services - Safe, effective, and reliable pest control and professional cleaning solutions.">
   <title>BRAND Pest Control &amp; Cleaning Services</title>
-  <!-- Replace the href below with a valid image URL or a complete Base64 image string -->
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
+  <style>
+    /* Basic Reset & Styling */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f8f9fa;
+    }
+    header {
+      background-color: #1b4332;
+      color: #fff;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 1.5rem;
+    }
+    nav a {
+      color: #fff;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background-color: #2d6a4f;
+      color: #fff;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      color: #1b4332;
+      margin-bottom: 0.5rem;
+    }
+    .contact-form {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      margin-top: 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .form-group {
+      margin-bottom: 1rem;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .form-group input, .form-group textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #2d6a4f;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1b4332;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #1b4332;
+      color: #fff;
+      margin-top: 3rem;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Page Content Goes Here -->
+  <!-- Navigation Header -->
   <header>
-    <h1>BRAND Pest Control &amp; Cleaning Services</h1>
+    <h1>BRAND Pest Control</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <main>
-    <p>Welcome to BRAND Pest Control and Cleaning Services. We offer safe, effective, and reliable solutions for your home and business.</p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Safe, Effective &amp; Reliable Services</h2>
+    <p>Your trusted partner for residential and commercial pest management and deep cleaning.</p>
+  </section>
+
+  <!-- Main Content Area -->
+  <main class="container">
+    
+    <!-- Services Section -->
+    <section id="services">
+      <h2 style="text-align: center;">Our Services</h2>
+      <div class="services-grid">
+        <div class="card">
+          <h3>Pest Control</h3>
+          <p>Targeted elimination of termites, rodents, insects, and other pests using eco-friendly solutions.</p>
+        </div>
+        <div class="card">
+          <h3>Residential Cleaning</h3>
+          <p>Comprehensive home cleaning, deep sanitization, and carpet care tailored to your home.</p>
+        </div>
+        <div class="card">
+          <h3>Commercial Solutions</h3>
+          <p>Scheduled maintenance and pest control plans designed for offices, restaurants, and warehouses.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="contact-form">
+      <h2>Get a Free Quote</h2>
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="service">Service Needed</label>
+          <input type="text" id="service" name="service" placeholder="e.g. Pest Control or Deep Cleaning">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+        <button type="submit">Submit Request</button>
+      </form>
+    </section>
+
   </main>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2026 BRAND Pest Control &amp; Cleaning Services. All rights reserved.</p>
   </footer>
 
 </body>
 </html>
+
 
